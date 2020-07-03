@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>License</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">EMC Footprint Analysis</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="about.html">About</a>
+</li>
+<li>
+  <a href="license.html">License</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<!-- Add a small amount of space between sections. -->
+<style type="text/css">
+div.section {
+  padding-top: 12px;
+}
+</style>
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">License</h1>
+
+</div>
+
+
+<p>
+<button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
+<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
+</button>
+</p>
+<div id="workflowr-report" class="collapse">
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#summary">Summary</a>
+</li>
+<li>
+<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> </a>
+</li>
+<li>
+<a data-toggle="tab" href="#versions">Past versions</a>
+</li>
+</ul>
+<div class="tab-content">
+<div id="summary" class="tab-pane fade in active">
+<p>
+<strong>Last updated:</strong> 2020-07-03
+</p>
+<p>
+<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 2 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
+</p>
+<p>
+<strong>Knit directory:</strong> <code>outputs/analysis/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
+</p>
+<p>
+This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis was created with <a
+  href="https://github.com/jdblischak/workflowr">workflowr</a> (version 1.6.0). The <em>Checks</em> tab describes the reproducibility checks that were applied when the results were created. The <em>Past versions</em> tab lists the development history.
+</p>
+<hr>
+</div>
+<div id="checks" class="tab-pane fade">
+<div id="workflowr-checks" class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date </a>
+</p>
+</div>
+<div id="strongRMarkdownfilestronguptodate" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomSaideepGonaEMCFootprintAnalysistree8b8b751026de3f4f188175b81194aa39b16e8c5etargetblank8b8b751a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/SaideepGona/EMC_Footprint_Analysis/tree/8b8b751026de3f4f188175b81194aa39b16e8c5e" target="_blank">8b8b751</a> </a>
+</p>
+</div>
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomSaideepGonaEMCFootprintAnalysistree8b8b751026de3f4f188175b81194aa39b16e8c5etargetblank8b8b751a" class="panel-collapse collapse">
+<div class="panel-body">
+<p>
+Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility. The version displayed above was the version of the Git repository at the time these results were generated. <br><br> Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
+</p>
+<pre><code>
+Ignored files:
+    Ignored:    HINT/outputs/.Rhistory
+    Ignored:    HINT/outputs/AF04_Flu_motif_enrich/
+    Ignored:    HINT/outputs/AF04_NI_motif_enrich/
+    Ignored:    HINT/outputs/AF06_Flu_motif_enrich/
+    Ignored:    HINT/outputs/AF06_NI_motif_enrich/
+    Ignored:    HINT/outputs/AF08_Flu_motif_enrich/
+    Ignored:    HINT/outputs/AF08_NI_motif_enrich/
+    Ignored:    HINT/outputs/AF10_Flu_motif_enrich/
+    Ignored:    HINT/outputs/AF10_NI_motif_enrich/
+    Ignored:    HINT/outputs/AF12_Flu_motif_enrich/
+    Ignored:    HINT/outputs/AF12_NI_motif_enrich/
+    Ignored:    HINT/outputs/AF14_Flu_motif_enrich/
+    Ignored:    HINT/outputs/AF14_NI_motif_enrich/
+    Ignored:    HINT/outputs/AF16_Flu_motif_enrich/
+    Ignored:    HINT/outputs/AF16_NI_motif_enrich/
+    Ignored:    HINT/outputs/AF18_Flu_motif_enrich/
+    Ignored:    HINT/outputs/AF18_NI_motif_enrich/
+    Ignored:    HINT/outputs/AF20_Flu_motif_enrich/
+    Ignored:    HINT/outputs/AF20_NI_motif_enrich/
+    Ignored:    HINT/outputs/AF22_Flu_motif_enrich/
+    Ignored:    HINT/outputs/AF22_NI_motif_enrich/
+    Ignored:    HINT/outputs/AF24_Flu_motif_enrich/
+    Ignored:    HINT/outputs/AF24_NI_motif_enrich/
+    Ignored:    HINT/outputs/AF26_Flu_motif_enrich/
+    Ignored:    HINT/outputs/AF26_NI_motif_enrich/
+    Ignored:    HINT/outputs/AF28_Flu_motif_enrich/
+    Ignored:    HINT/outputs/AF28_NI_motif_enrich/
+    Ignored:    HINT/outputs/AF30_Flu_motif_enrich/
+    Ignored:    HINT/outputs/AF30_NI_motif_enrich/
+    Ignored:    HINT/outputs/AF34_Flu_motif_enrich/
+    Ignored:    HINT/outputs/AF34_NI_motif_enrich/
+    Ignored:    HINT/outputs/AF36_Flu_motif_enrich/
+    Ignored:    HINT/outputs/AF36_NI_motif_enrich/
+    Ignored:    HINT/outputs/AF38_Flu_motif_enrich/
+    Ignored:    HINT/outputs/AF38_NI_motif_enrich/
+    Ignored:    HINT/outputs/EU03_Flu_motif_enrich/
+    Ignored:    HINT/outputs/EU03_NI_motif_enrich/
+    Ignored:    HINT/outputs/EU05_Flu_motif_enrich/
+    Ignored:    HINT/outputs/EU05_NI_motif_enrich/
+    Ignored:    HINT/outputs/EU07_Flu_motif_enrich/
+    Ignored:    HINT/outputs/EU07_NI_motif_enrich/
+    Ignored:    HINT/outputs/EU09_Flu_motif_enrich/
+    Ignored:    HINT/outputs/EU09_NI_motif_enrich/
+    Ignored:    HINT/outputs/EU13_Flu_motif_enrich/
+    Ignored:    HINT/outputs/EU13_NI_motif_enrich/
+    Ignored:    HINT/outputs/EU15_Flu_motif_enrich/
+    Ignored:    HINT/outputs/EU15_NI_motif_enrich/
+    Ignored:    HINT/outputs/EU17_Flu_motif_enrich/
+    Ignored:    HINT/outputs/EU17_NI_motif_enrich/
+    Ignored:    HINT/outputs/EU19_Flu_motif_enrich/
+    Ignored:    HINT/outputs/EU19_NI_motif_enrich/
+    Ignored:    HINT/outputs/EU21_Flu_motif_enrich/
+    Ignored:    HINT/outputs/EU21_NI_motif_enrich/
+    Ignored:    HINT/outputs/EU25_Flu_motif_enrich/
+    Ignored:    HINT/outputs/EU25_NI_motif_enrich/
+    Ignored:    HINT/outputs/EU27_Flu_motif_enrich/
+    Ignored:    HINT/outputs/EU27_NI_motif_enrich/
+    Ignored:    HINT/outputs/EU29_Flu_motif_enrich/
+    Ignored:    HINT/outputs/EU29_NI_motif_enrich/
+    Ignored:    HINT/outputs/EU33_Flu_motif_enrich/
+    Ignored:    HINT/outputs/EU33_NI_motif_enrich/
+    Ignored:    HINT/outputs/EU37_Flu_motif_enrich/
+    Ignored:    HINT/outputs/EU37_NI_motif_enrich/
+    Ignored:    HINT/outputs/EU39_Flu_motif_enrich/
+    Ignored:    HINT/outputs/EU39_NI_motif_enrich/
+    Ignored:    HINT/outputs/EU41_Flu_motif_enrich/
+    Ignored:    HINT/outputs/EU41_NI_motif_enrich/
+    Ignored:    HINT/outputs/EU43_Flu_motif_enrich/
+    Ignored:    HINT/outputs/EU43_NI_motif_enrich/
+    Ignored:    HINT/outputs/EU47_Flu_motif_enrich/
+    Ignored:    HINT/outputs/EU47_NI_motif_enrich/
+    Ignored:    HINT/outputs/analysis/.Rhistory
+    Ignored:    HINT/outputs/analysis/count_footprints.nb.html
+    Ignored:    WASP/Kate_scripts/
+    Ignored:    WASP/WASP/
+    Ignored:    WASP/WASP_inputs/
+    Ignored:    WASP/WASP_output/
+    Ignored:    WASP/adjusted_heterzygote/
+    Ignored:    WASP/adjusted_read_counts/
+    Ignored:    WASP/cht_input_files/
+    Ignored:    WASP/combined_haplo_test/
+    Ignored:    WASP/estimate_dispersion/
+    Ignored:    WASP/genotype_files/
+    Ignored:    WASP/haplotype_read_counts/
+    Ignored:    WASP/impute2/
+    Ignored:    WASP/logs/
+    Ignored:    WASP/phasing/
+    Ignored:    WASP/samples/
+    Ignored:    WASP/sbatch_scripts/
+    Ignored:    WASP/submitted_jobs/
+    Ignored:    WASP/target_regions/
+    Ignored:    WASP/target_regions_100kb/
+    Ignored:    WASP/temp/
+    Ignored:    WASP/trimmed_data/
+
+Untracked files:
+    Untracked:  .DS_Store
+    Untracked:  .Rhistory
+    Untracked:  ._.DS_Store
+    Untracked:  ._FPKM_RNAseq_matrix.txt
+    Untracked:  ._MacFlu_datasets.tar
+    Untracked:  ._README.md
+    Untracked:  .vscode/
+    Untracked:  ATACseq/
+    Untracked:  CHIPseq_H3K27ac/
+    Untracked:  CHIPseq_H3K27me3/
+    Untracked:  CHIPseq_H3K4me1/
+    Untracked:  CHIPseq_H3K4me3/
+    Untracked:  ChromHMM/
+    Untracked:  HINT/outputs/AF04_Flu.bed
+    Untracked:  HINT/outputs/AF04_Flu.info
+    Untracked:  HINT/outputs/AF04_Flu.sbatch
+    Untracked:  HINT/outputs/AF04_Flu/
+    Untracked:  HINT/outputs/AF04_Flu_motif/
+    Untracked:  HINT/outputs/AF04_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/AF04_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/AF04_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF04_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/AF04_NI.bed
+    Untracked:  HINT/outputs/AF04_NI.info
+    Untracked:  HINT/outputs/AF04_NI.sbatch
+    Untracked:  HINT/outputs/AF04_NI/
+    Untracked:  HINT/outputs/AF04_NI_motif/
+    Untracked:  HINT/outputs/AF04_NI_tracks.sbatch
+    Untracked:  HINT/outputs/AF04_NIenhancers.sbatch
+    Untracked:  HINT/outputs/AF04_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF04_NImotif_match.sbatch
+    Untracked:  HINT/outputs/AF06_Flu.bed
+    Untracked:  HINT/outputs/AF06_Flu.info
+    Untracked:  HINT/outputs/AF06_Flu.sbatch
+    Untracked:  HINT/outputs/AF06_Flu/
+    Untracked:  HINT/outputs/AF06_Flu_motif/
+    Untracked:  HINT/outputs/AF06_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/AF06_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/AF06_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF06_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/AF06_NI.bed
+    Untracked:  HINT/outputs/AF06_NI.info
+    Untracked:  HINT/outputs/AF06_NI.sbatch
+    Untracked:  HINT/outputs/AF06_NI/
+    Untracked:  HINT/outputs/AF06_NI_motif/
+    Untracked:  HINT/outputs/AF06_NI_tracks.sbatch
+    Untracked:  HINT/outputs/AF06_NIenhancers.sbatch
+    Untracked:  HINT/outputs/AF06_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF06_NImotif_match.sbatch
+    Untracked:  HINT/outputs/AF08_Flu.bed
+    Untracked:  HINT/outputs/AF08_Flu.info
+    Untracked:  HINT/outputs/AF08_Flu.sbatch
+    Untracked:  HINT/outputs/AF08_Flu/
+    Untracked:  HINT/outputs/AF08_Flu_motif/
+    Untracked:  HINT/outputs/AF08_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/AF08_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/AF08_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF08_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/AF08_NI.bed
+    Untracked:  HINT/outputs/AF08_NI.info
+    Untracked:  HINT/outputs/AF08_NI.sbatch
+    Untracked:  HINT/outputs/AF08_NI/
+    Untracked:  HINT/outputs/AF08_NI_motif/
+    Untracked:  HINT/outputs/AF08_NI_tracks.sbatch
+    Untracked:  HINT/outputs/AF08_NIenhancers.sbatch
+    Untracked:  HINT/outputs/AF08_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF08_NImotif_match.sbatch
+    Untracked:  HINT/outputs/AF10_Flu.bed
+    Untracked:  HINT/outputs/AF10_Flu.info
+    Untracked:  HINT/outputs/AF10_Flu.sbatch
+    Untracked:  HINT/outputs/AF10_Flu/
+    Untracked:  HINT/outputs/AF10_Flu_motif/
+    Untracked:  HINT/outputs/AF10_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/AF10_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/AF10_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF10_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/AF10_NI.bed
+    Untracked:  HINT/outputs/AF10_NI.info
+    Untracked:  HINT/outputs/AF10_NI.sbatch
+    Untracked:  HINT/outputs/AF10_NI/
+    Untracked:  HINT/outputs/AF10_NI_motif/
+    Untracked:  HINT/outputs/AF10_NI_tracks.sbatch
+    Untracked:  HINT/outputs/AF10_NIenhancers.sbatch
+    Untracked:  HINT/outputs/AF10_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF10_NImotif_match.sbatch
+    Untracked:  HINT/outputs/AF12_Flu.bed
+    Untracked:  HINT/outputs/AF12_Flu.info
+    Untracked:  HINT/outputs/AF12_Flu.sbatch
+    Untracked:  HINT/outputs/AF12_Flu/
+    Untracked:  HINT/outputs/AF12_Flu_motif/
+    Untracked:  HINT/outputs/AF12_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/AF12_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/AF12_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF12_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/AF12_NI.bed
+    Untracked:  HINT/outputs/AF12_NI.info
+    Untracked:  HINT/outputs/AF12_NI.sbatch
+    Untracked:  HINT/outputs/AF12_NI/
+    Untracked:  HINT/outputs/AF12_NI_motif/
+    Untracked:  HINT/outputs/AF12_NI_tracks.sbatch
+    Untracked:  HINT/outputs/AF12_NIenhancers.sbatch
+    Untracked:  HINT/outputs/AF12_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF12_NImotif_match.sbatch
+    Untracked:  HINT/outputs/AF14_Flu.bed
+    Untracked:  HINT/outputs/AF14_Flu.info
+    Untracked:  HINT/outputs/AF14_Flu.sbatch
+    Untracked:  HINT/outputs/AF14_Flu/
+    Untracked:  HINT/outputs/AF14_Flu_motif/
+    Untracked:  HINT/outputs/AF14_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/AF14_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/AF14_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF14_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/AF14_NI.bed
+    Untracked:  HINT/outputs/AF14_NI.info
+    Untracked:  HINT/outputs/AF14_NI.sbatch
+    Untracked:  HINT/outputs/AF14_NI/
+    Untracked:  HINT/outputs/AF14_NI_motif/
+    Untracked:  HINT/outputs/AF14_NI_tracks.sbatch
+    Untracked:  HINT/outputs/AF14_NIenhancers.sbatch
+    Untracked:  HINT/outputs/AF14_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF14_NImotif_match.sbatch
+    Untracked:  HINT/outputs/AF16_Flu.bed
+    Untracked:  HINT/outputs/AF16_Flu.info
+    Untracked:  HINT/outputs/AF16_Flu.sbatch
+    Untracked:  HINT/outputs/AF16_Flu/
+    Untracked:  HINT/outputs/AF16_Flu_motif/
+    Untracked:  HINT/outputs/AF16_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/AF16_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/AF16_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF16_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/AF16_NI.bed
+    Untracked:  HINT/outputs/AF16_NI.info
+    Untracked:  HINT/outputs/AF16_NI.sbatch
+    Untracked:  HINT/outputs/AF16_NI/
+    Untracked:  HINT/outputs/AF16_NI_motif/
+    Untracked:  HINT/outputs/AF16_NI_tracks.sbatch
+    Untracked:  HINT/outputs/AF16_NIenhancers.sbatch
+    Untracked:  HINT/outputs/AF16_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF16_NImotif_match.sbatch
+    Untracked:  HINT/outputs/AF18_Flu.bed
+    Untracked:  HINT/outputs/AF18_Flu.info
+    Untracked:  HINT/outputs/AF18_Flu.sbatch
+    Untracked:  HINT/outputs/AF18_Flu/
+    Untracked:  HINT/outputs/AF18_Flu_motif/
+    Untracked:  HINT/outputs/AF18_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/AF18_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/AF18_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF18_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/AF18_NI.bed
+    Untracked:  HINT/outputs/AF18_NI.info
+    Untracked:  HINT/outputs/AF18_NI.sbatch
+    Untracked:  HINT/outputs/AF18_NI/
+    Untracked:  HINT/outputs/AF18_NI_motif/
+    Untracked:  HINT/outputs/AF18_NI_tracks.sbatch
+    Untracked:  HINT/outputs/AF18_NIenhancers.sbatch
+    Untracked:  HINT/outputs/AF18_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF18_NImotif_match.sbatch
+    Untracked:  HINT/outputs/AF20_Flu.bed
+    Untracked:  HINT/outputs/AF20_Flu.info
+    Untracked:  HINT/outputs/AF20_Flu.sbatch
+    Untracked:  HINT/outputs/AF20_Flu/
+    Untracked:  HINT/outputs/AF20_Flu_motif/
+    Untracked:  HINT/outputs/AF20_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/AF20_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/AF20_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF20_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/AF20_NI.bed
+    Untracked:  HINT/outputs/AF20_NI.info
+    Untracked:  HINT/outputs/AF20_NI.sbatch
+    Untracked:  HINT/outputs/AF20_NI/
+    Untracked:  HINT/outputs/AF20_NI_motif/
+    Untracked:  HINT/outputs/AF20_NI_tracks.sbatch
+    Untracked:  HINT/outputs/AF20_NIenhancers.sbatch
+    Untracked:  HINT/outputs/AF20_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF20_NImotif_match.sbatch
+    Untracked:  HINT/outputs/AF22_Flu.bed
+    Untracked:  HINT/outputs/AF22_Flu.info
+    Untracked:  HINT/outputs/AF22_Flu.sbatch
+    Untracked:  HINT/outputs/AF22_Flu/
+    Untracked:  HINT/outputs/AF22_Flu_motif/
+    Untracked:  HINT/outputs/AF22_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/AF22_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/AF22_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF22_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/AF22_NI.bed
+    Untracked:  HINT/outputs/AF22_NI.info
+    Untracked:  HINT/outputs/AF22_NI.sbatch
+    Untracked:  HINT/outputs/AF22_NI/
+    Untracked:  HINT/outputs/AF22_NI_motif/
+    Untracked:  HINT/outputs/AF22_NI_tracks.sbatch
+    Untracked:  HINT/outputs/AF22_NIenhancers.sbatch
+    Untracked:  HINT/outputs/AF22_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF22_NImotif_match.sbatch
+    Untracked:  HINT/outputs/AF24_Flu.bed
+    Untracked:  HINT/outputs/AF24_Flu.info
+    Untracked:  HINT/outputs/AF24_Flu.sbatch
+    Untracked:  HINT/outputs/AF24_Flu/
+    Untracked:  HINT/outputs/AF24_Flu_motif/
+    Untracked:  HINT/outputs/AF24_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/AF24_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/AF24_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF24_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/AF24_NI.bed
+    Untracked:  HINT/outputs/AF24_NI.info
+    Untracked:  HINT/outputs/AF24_NI.sbatch
+    Untracked:  HINT/outputs/AF24_NI/
+    Untracked:  HINT/outputs/AF24_NI_motif/
+    Untracked:  HINT/outputs/AF24_NI_tracks.sbatch
+    Untracked:  HINT/outputs/AF24_NIenhancers.sbatch
+    Untracked:  HINT/outputs/AF24_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF24_NImotif_match.sbatch
+    Untracked:  HINT/outputs/AF26_Flu.bed
+    Untracked:  HINT/outputs/AF26_Flu.info
+    Untracked:  HINT/outputs/AF26_Flu.sbatch
+    Untracked:  HINT/outputs/AF26_Flu/
+    Untracked:  HINT/outputs/AF26_Flu_motif/
+    Untracked:  HINT/outputs/AF26_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/AF26_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/AF26_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF26_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/AF26_NI.bed
+    Untracked:  HINT/outputs/AF26_NI.info
+    Untracked:  HINT/outputs/AF26_NI.sbatch
+    Untracked:  HINT/outputs/AF26_NI/
+    Untracked:  HINT/outputs/AF26_NI_motif/
+    Untracked:  HINT/outputs/AF26_NI_tracks.sbatch
+    Untracked:  HINT/outputs/AF26_NIenhancers.sbatch
+    Untracked:  HINT/outputs/AF26_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF26_NImotif_match.sbatch
+    Untracked:  HINT/outputs/AF28_Flu.bed
+    Untracked:  HINT/outputs/AF28_Flu.info
+    Untracked:  HINT/outputs/AF28_Flu.sbatch
+    Untracked:  HINT/outputs/AF28_Flu/
+    Untracked:  HINT/outputs/AF28_Flu_motif/
+    Untracked:  HINT/outputs/AF28_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/AF28_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/AF28_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF28_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/AF28_NI.bed
+    Untracked:  HINT/outputs/AF28_NI.info
+    Untracked:  HINT/outputs/AF28_NI.sbatch
+    Untracked:  HINT/outputs/AF28_NI/
+    Untracked:  HINT/outputs/AF28_NI_motif/
+    Untracked:  HINT/outputs/AF28_NI_tracks.sbatch
+    Untracked:  HINT/outputs/AF28_NIenhancers.sbatch
+    Untracked:  HINT/outputs/AF28_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF28_NImotif_match.sbatch
+    Untracked:  HINT/outputs/AF30_Flu.bed
+    Untracked:  HINT/outputs/AF30_Flu.info
+    Untracked:  HINT/outputs/AF30_Flu.sbatch
+    Untracked:  HINT/outputs/AF30_Flu/
+    Untracked:  HINT/outputs/AF30_Flu_motif/
+    Untracked:  HINT/outputs/AF30_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/AF30_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/AF30_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF30_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/AF30_NI.bed
+    Untracked:  HINT/outputs/AF30_NI.info
+    Untracked:  HINT/outputs/AF30_NI.sbatch
+    Untracked:  HINT/outputs/AF30_NI/
+    Untracked:  HINT/outputs/AF30_NI_motif/
+    Untracked:  HINT/outputs/AF30_NI_tracks.sbatch
+    Untracked:  HINT/outputs/AF30_NIenhancers.sbatch
+    Untracked:  HINT/outputs/AF30_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF30_NImotif_match.sbatch
+    Untracked:  HINT/outputs/AF34_Flu.bed
+    Untracked:  HINT/outputs/AF34_Flu.info
+    Untracked:  HINT/outputs/AF34_Flu.sbatch
+    Untracked:  HINT/outputs/AF34_Flu/
+    Untracked:  HINT/outputs/AF34_Flu_motif/
+    Untracked:  HINT/outputs/AF34_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/AF34_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/AF34_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF34_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/AF34_NI.bed
+    Untracked:  HINT/outputs/AF34_NI.info
+    Untracked:  HINT/outputs/AF34_NI.sbatch
+    Untracked:  HINT/outputs/AF34_NI/
+    Untracked:  HINT/outputs/AF34_NI_motif/
+    Untracked:  HINT/outputs/AF34_NI_tracks.sbatch
+    Untracked:  HINT/outputs/AF34_NIenhancers.sbatch
+    Untracked:  HINT/outputs/AF34_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF34_NImotif_match.sbatch
+    Untracked:  HINT/outputs/AF36_Flu.bed
+    Untracked:  HINT/outputs/AF36_Flu.info
+    Untracked:  HINT/outputs/AF36_Flu.sbatch
+    Untracked:  HINT/outputs/AF36_Flu/
+    Untracked:  HINT/outputs/AF36_Flu_motif/
+    Untracked:  HINT/outputs/AF36_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/AF36_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/AF36_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF36_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/AF36_NI.bed
+    Untracked:  HINT/outputs/AF36_NI.info
+    Untracked:  HINT/outputs/AF36_NI.sbatch
+    Untracked:  HINT/outputs/AF36_NI/
+    Untracked:  HINT/outputs/AF36_NI_motif/
+    Untracked:  HINT/outputs/AF36_NI_tracks.sbatch
+    Untracked:  HINT/outputs/AF36_NIenhancers.sbatch
+    Untracked:  HINT/outputs/AF36_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF36_NImotif_match.sbatch
+    Untracked:  HINT/outputs/AF38_Flu.bed
+    Untracked:  HINT/outputs/AF38_Flu.info
+    Untracked:  HINT/outputs/AF38_Flu.sbatch
+    Untracked:  HINT/outputs/AF38_Flu/
+    Untracked:  HINT/outputs/AF38_Flu_motif/
+    Untracked:  HINT/outputs/AF38_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/AF38_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/AF38_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF38_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/AF38_NI.bed
+    Untracked:  HINT/outputs/AF38_NI.info
+    Untracked:  HINT/outputs/AF38_NI.sbatch
+    Untracked:  HINT/outputs/AF38_NI/
+    Untracked:  HINT/outputs/AF38_NI_motif/
+    Untracked:  HINT/outputs/AF38_NI_tracks.sbatch
+    Untracked:  HINT/outputs/AF38_NIenhancers.sbatch
+    Untracked:  HINT/outputs/AF38_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/AF38_NImotif_match.sbatch
+    Untracked:  HINT/outputs/EU03_Flu.bed
+    Untracked:  HINT/outputs/EU03_Flu.info
+    Untracked:  HINT/outputs/EU03_Flu.sbatch
+    Untracked:  HINT/outputs/EU03_Flu/
+    Untracked:  HINT/outputs/EU03_Flu_motif/
+    Untracked:  HINT/outputs/EU03_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/EU03_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/EU03_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU03_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/EU03_NI.bed
+    Untracked:  HINT/outputs/EU03_NI.info
+    Untracked:  HINT/outputs/EU03_NI.sbatch
+    Untracked:  HINT/outputs/EU03_NI/
+    Untracked:  HINT/outputs/EU03_NI_motif/
+    Untracked:  HINT/outputs/EU03_NI_tracks.sbatch
+    Untracked:  HINT/outputs/EU03_NIenhancers.sbatch
+    Untracked:  HINT/outputs/EU03_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU03_NImotif_match.sbatch
+    Untracked:  HINT/outputs/EU05_Flu.bed
+    Untracked:  HINT/outputs/EU05_Flu.info
+    Untracked:  HINT/outputs/EU05_Flu.sbatch
+    Untracked:  HINT/outputs/EU05_Flu/
+    Untracked:  HINT/outputs/EU05_Flu_motif/
+    Untracked:  HINT/outputs/EU05_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/EU05_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/EU05_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU05_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/EU05_NI.bed
+    Untracked:  HINT/outputs/EU05_NI.info
+    Untracked:  HINT/outputs/EU05_NI.sbatch
+    Untracked:  HINT/outputs/EU05_NI/
+    Untracked:  HINT/outputs/EU05_NI_motif/
+    Untracked:  HINT/outputs/EU05_NI_tracks.sbatch
+    Untracked:  HINT/outputs/EU05_NIenhancers.sbatch
+    Untracked:  HINT/outputs/EU05_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU05_NImotif_match.sbatch
+    Untracked:  HINT/outputs/EU07_Flu.bed
+    Untracked:  HINT/outputs/EU07_Flu.info
+    Untracked:  HINT/outputs/EU07_Flu.sbatch
+    Untracked:  HINT/outputs/EU07_Flu/
+    Untracked:  HINT/outputs/EU07_Flu_motif/
+    Untracked:  HINT/outputs/EU07_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/EU07_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/EU07_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU07_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/EU07_NI.bed
+    Untracked:  HINT/outputs/EU07_NI.info
+    Untracked:  HINT/outputs/EU07_NI.sbatch
+    Untracked:  HINT/outputs/EU07_NI/
+    Untracked:  HINT/outputs/EU07_NI_motif/
+    Untracked:  HINT/outputs/EU07_NI_tracks.sbatch
+    Untracked:  HINT/outputs/EU07_NIenhancers.sbatch
+    Untracked:  HINT/outputs/EU07_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU07_NImotif_match.sbatch
+    Untracked:  HINT/outputs/EU09_Flu.bed
+    Untracked:  HINT/outputs/EU09_Flu.info
+    Untracked:  HINT/outputs/EU09_Flu.sbatch
+    Untracked:  HINT/outputs/EU09_Flu/
+    Untracked:  HINT/outputs/EU09_Flu_motif/
+    Untracked:  HINT/outputs/EU09_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/EU09_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/EU09_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU09_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/EU09_NI.bed
+    Untracked:  HINT/outputs/EU09_NI.info
+    Untracked:  HINT/outputs/EU09_NI.sbatch
+    Untracked:  HINT/outputs/EU09_NI/
+    Untracked:  HINT/outputs/EU09_NI_motif/
+    Untracked:  HINT/outputs/EU09_NI_tracks.sbatch
+    Untracked:  HINT/outputs/EU09_NIenhancers.sbatch
+    Untracked:  HINT/outputs/EU09_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU09_NImotif_match.sbatch
+    Untracked:  HINT/outputs/EU13_Flu.bed
+    Untracked:  HINT/outputs/EU13_Flu.info
+    Untracked:  HINT/outputs/EU13_Flu.sbatch
+    Untracked:  HINT/outputs/EU13_Flu/
+    Untracked:  HINT/outputs/EU13_Flu_motif/
+    Untracked:  HINT/outputs/EU13_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/EU13_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/EU13_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU13_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/EU13_NI.bed
+    Untracked:  HINT/outputs/EU13_NI.info
+    Untracked:  HINT/outputs/EU13_NI.sbatch
+    Untracked:  HINT/outputs/EU13_NI/
+    Untracked:  HINT/outputs/EU13_NI_motif/
+    Untracked:  HINT/outputs/EU13_NI_tracks.sbatch
+    Untracked:  HINT/outputs/EU13_NIenhancers.sbatch
+    Untracked:  HINT/outputs/EU13_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU13_NImotif_match.sbatch
+    Untracked:  HINT/outputs/EU15_Flu.bed
+    Untracked:  HINT/outputs/EU15_Flu.info
+    Untracked:  HINT/outputs/EU15_Flu.sbatch
+    Untracked:  HINT/outputs/EU15_Flu/
+    Untracked:  HINT/outputs/EU15_Flu_motif/
+    Untracked:  HINT/outputs/EU15_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/EU15_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/EU15_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU15_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/EU15_NI.bed
+    Untracked:  HINT/outputs/EU15_NI.info
+    Untracked:  HINT/outputs/EU15_NI.sbatch
+    Untracked:  HINT/outputs/EU15_NI/
+    Untracked:  HINT/outputs/EU15_NI_motif/
+    Untracked:  HINT/outputs/EU15_NI_tracks.sbatch
+    Untracked:  HINT/outputs/EU15_NIenhancers.sbatch
+    Untracked:  HINT/outputs/EU15_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU15_NImotif_match.sbatch
+    Untracked:  HINT/outputs/EU17_Flu.bed
+    Untracked:  HINT/outputs/EU17_Flu.info
+    Untracked:  HINT/outputs/EU17_Flu.sbatch
+    Untracked:  HINT/outputs/EU17_Flu/
+    Untracked:  HINT/outputs/EU17_Flu_motif/
+    Untracked:  HINT/outputs/EU17_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/EU17_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/EU17_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU17_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/EU17_NI.bed
+    Untracked:  HINT/outputs/EU17_NI.info
+    Untracked:  HINT/outputs/EU17_NI.sbatch
+    Untracked:  HINT/outputs/EU17_NI/
+    Untracked:  HINT/outputs/EU17_NI_motif/
+    Untracked:  HINT/outputs/EU17_NI_tracks.sbatch
+    Untracked:  HINT/outputs/EU17_NIenhancers.sbatch
+    Untracked:  HINT/outputs/EU17_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU17_NImotif_match.sbatch
+    Untracked:  HINT/outputs/EU19_Flu.bed
+    Untracked:  HINT/outputs/EU19_Flu.info
+    Untracked:  HINT/outputs/EU19_Flu.sbatch
+    Untracked:  HINT/outputs/EU19_Flu/
+    Untracked:  HINT/outputs/EU19_Flu_motif/
+    Untracked:  HINT/outputs/EU19_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/EU19_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/EU19_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU19_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/EU19_NI.bed
+    Untracked:  HINT/outputs/EU19_NI.info
+    Untracked:  HINT/outputs/EU19_NI.sbatch
+    Untracked:  HINT/outputs/EU19_NI/
+    Untracked:  HINT/outputs/EU19_NI_motif/
+    Untracked:  HINT/outputs/EU19_NI_tracks.sbatch
+    Untracked:  HINT/outputs/EU19_NIenhancers.sbatch
+    Untracked:  HINT/outputs/EU19_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU19_NImotif_match.sbatch
+    Untracked:  HINT/outputs/EU21_Flu.bed
+    Untracked:  HINT/outputs/EU21_Flu.info
+    Untracked:  HINT/outputs/EU21_Flu.sbatch
+    Untracked:  HINT/outputs/EU21_Flu/
+    Untracked:  HINT/outputs/EU21_Flu_motif/
+    Untracked:  HINT/outputs/EU21_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/EU21_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/EU21_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU21_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/EU21_NI.bed
+    Untracked:  HINT/outputs/EU21_NI.info
+    Untracked:  HINT/outputs/EU21_NI.sbatch
+    Untracked:  HINT/outputs/EU21_NI/
+    Untracked:  HINT/outputs/EU21_NI_motif/
+    Untracked:  HINT/outputs/EU21_NI_tracks.sbatch
+    Untracked:  HINT/outputs/EU21_NIenhancers.sbatch
+    Untracked:  HINT/outputs/EU21_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU21_NImotif_match.sbatch
+    Untracked:  HINT/outputs/EU25_Flu.bed
+    Untracked:  HINT/outputs/EU25_Flu.info
+    Untracked:  HINT/outputs/EU25_Flu.sbatch
+    Untracked:  HINT/outputs/EU25_Flu/
+    Untracked:  HINT/outputs/EU25_Flu_motif/
+    Untracked:  HINT/outputs/EU25_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/EU25_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/EU25_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU25_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/EU25_NI.bed
+    Untracked:  HINT/outputs/EU25_NI.info
+    Untracked:  HINT/outputs/EU25_NI.sbatch
+    Untracked:  HINT/outputs/EU25_NI/
+    Untracked:  HINT/outputs/EU25_NI_motif/
+    Untracked:  HINT/outputs/EU25_NI_tracks.sbatch
+    Untracked:  HINT/outputs/EU25_NIenhancers.sbatch
+    Untracked:  HINT/outputs/EU25_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU25_NImotif_match.sbatch
+    Untracked:  HINT/outputs/EU27_Flu.bed
+    Untracked:  HINT/outputs/EU27_Flu.info
+    Untracked:  HINT/outputs/EU27_Flu.sbatch
+    Untracked:  HINT/outputs/EU27_Flu/
+    Untracked:  HINT/outputs/EU27_Flu_motif/
+    Untracked:  HINT/outputs/EU27_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/EU27_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/EU27_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU27_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/EU27_NI.bed
+    Untracked:  HINT/outputs/EU27_NI.info
+    Untracked:  HINT/outputs/EU27_NI.sbatch
+    Untracked:  HINT/outputs/EU27_NI/
+    Untracked:  HINT/outputs/EU27_NI_motif/
+    Untracked:  HINT/outputs/EU27_NI_tracks.sbatch
+    Untracked:  HINT/outputs/EU27_NIenhancers.sbatch
+    Untracked:  HINT/outputs/EU27_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU27_NImotif_match.sbatch
+    Untracked:  HINT/outputs/EU29_Flu.bed
+    Untracked:  HINT/outputs/EU29_Flu.info
+    Untracked:  HINT/outputs/EU29_Flu.sbatch
+    Untracked:  HINT/outputs/EU29_Flu/
+    Untracked:  HINT/outputs/EU29_Flu_motif/
+    Untracked:  HINT/outputs/EU29_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/EU29_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/EU29_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU29_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/EU29_NI.bed
+    Untracked:  HINT/outputs/EU29_NI.info
+    Untracked:  HINT/outputs/EU29_NI.sbatch
+    Untracked:  HINT/outputs/EU29_NI/
+    Untracked:  HINT/outputs/EU29_NI_motif/
+    Untracked:  HINT/outputs/EU29_NI_tracks.sbatch
+    Untracked:  HINT/outputs/EU29_NIenhancers.sbatch
+    Untracked:  HINT/outputs/EU29_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU29_NImotif_match.sbatch
+    Untracked:  HINT/outputs/EU33_Flu.bed
+    Untracked:  HINT/outputs/EU33_Flu.info
+    Untracked:  HINT/outputs/EU33_Flu.sbatch
+    Untracked:  HINT/outputs/EU33_Flu/
+    Untracked:  HINT/outputs/EU33_Flu_motif/
+    Untracked:  HINT/outputs/EU33_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/EU33_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/EU33_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU33_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/EU33_NI.bed
+    Untracked:  HINT/outputs/EU33_NI.info
+    Untracked:  HINT/outputs/EU33_NI.sbatch
+    Untracked:  HINT/outputs/EU33_NI/
+    Untracked:  HINT/outputs/EU33_NI_motif/
+    Untracked:  HINT/outputs/EU33_NI_tracks.sbatch
+    Untracked:  HINT/outputs/EU33_NIenhancers.sbatch
+    Untracked:  HINT/outputs/EU33_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU33_NImotif_match.sbatch
+    Untracked:  HINT/outputs/EU37_Flu.bed
+    Untracked:  HINT/outputs/EU37_Flu.info
+    Untracked:  HINT/outputs/EU37_Flu.sbatch
+    Untracked:  HINT/outputs/EU37_Flu/
+    Untracked:  HINT/outputs/EU37_Flu_motif/
+    Untracked:  HINT/outputs/EU37_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/EU37_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/EU37_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU37_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/EU37_NI.bed
+    Untracked:  HINT/outputs/EU37_NI.info
+    Untracked:  HINT/outputs/EU37_NI.sbatch
+    Untracked:  HINT/outputs/EU37_NI/
+    Untracked:  HINT/outputs/EU37_NI_motif/
+    Untracked:  HINT/outputs/EU37_NI_tracks.sbatch
+    Untracked:  HINT/outputs/EU37_NIenhancers.sbatch
+    Untracked:  HINT/outputs/EU37_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU37_NImotif_match.sbatch
+    Untracked:  HINT/outputs/EU39_Flu.bed
+    Untracked:  HINT/outputs/EU39_Flu.info
+    Untracked:  HINT/outputs/EU39_Flu.sbatch
+    Untracked:  HINT/outputs/EU39_Flu/
+    Untracked:  HINT/outputs/EU39_Flu_motif/
+    Untracked:  HINT/outputs/EU39_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/EU39_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/EU39_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU39_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/EU39_NI.bed
+    Untracked:  HINT/outputs/EU39_NI.info
+    Untracked:  HINT/outputs/EU39_NI.sbatch
+    Untracked:  HINT/outputs/EU39_NI/
+    Untracked:  HINT/outputs/EU39_NI_motif/
+    Untracked:  HINT/outputs/EU39_NI_tracks.sbatch
+    Untracked:  HINT/outputs/EU39_NIenhancers.sbatch
+    Untracked:  HINT/outputs/EU39_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU39_NImotif_match.sbatch
+    Untracked:  HINT/outputs/EU41_Flu.bed
+    Untracked:  HINT/outputs/EU41_Flu.info
+    Untracked:  HINT/outputs/EU41_Flu.sbatch
+    Untracked:  HINT/outputs/EU41_Flu/
+    Untracked:  HINT/outputs/EU41_Flu_motif/
+    Untracked:  HINT/outputs/EU41_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/EU41_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/EU41_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU41_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/EU41_NI.bed
+    Untracked:  HINT/outputs/EU41_NI.info
+    Untracked:  HINT/outputs/EU41_NI.sbatch
+    Untracked:  HINT/outputs/EU41_NI/
+    Untracked:  HINT/outputs/EU41_NI_motif/
+    Untracked:  HINT/outputs/EU41_NI_tracks.sbatch
+    Untracked:  HINT/outputs/EU41_NIenhancers.sbatch
+    Untracked:  HINT/outputs/EU41_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU41_NImotif_match.sbatch
+    Untracked:  HINT/outputs/EU43_Flu.bed
+    Untracked:  HINT/outputs/EU43_Flu.info
+    Untracked:  HINT/outputs/EU43_Flu.sbatch
+    Untracked:  HINT/outputs/EU43_Flu/
+    Untracked:  HINT/outputs/EU43_Flu_motif/
+    Untracked:  HINT/outputs/EU43_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/EU43_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/EU43_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU43_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/EU43_NI.bed
+    Untracked:  HINT/outputs/EU43_NI.info
+    Untracked:  HINT/outputs/EU43_NI.sbatch
+    Untracked:  HINT/outputs/EU43_NI/
+    Untracked:  HINT/outputs/EU43_NI_motif/
+    Untracked:  HINT/outputs/EU43_NI_tracks.sbatch
+    Untracked:  HINT/outputs/EU43_NIenhancers.sbatch
+    Untracked:  HINT/outputs/EU43_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU43_NImotif_match.sbatch
+    Untracked:  HINT/outputs/EU47_Flu.bed
+    Untracked:  HINT/outputs/EU47_Flu.info
+    Untracked:  HINT/outputs/EU47_Flu.sbatch
+    Untracked:  HINT/outputs/EU47_Flu/
+    Untracked:  HINT/outputs/EU47_Flu_motif/
+    Untracked:  HINT/outputs/EU47_Flu_tracks.sbatch
+    Untracked:  HINT/outputs/EU47_Fluenhancers.sbatch
+    Untracked:  HINT/outputs/EU47_Flumotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU47_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/EU47_NI.bed
+    Untracked:  HINT/outputs/EU47_NI.info
+    Untracked:  HINT/outputs/EU47_NI.sbatch
+    Untracked:  HINT/outputs/EU47_NI/
+    Untracked:  HINT/outputs/EU47_NI_motif/
+    Untracked:  HINT/outputs/EU47_NI_tracks.sbatch
+    Untracked:  HINT/outputs/EU47_NIenhancers.sbatch
+    Untracked:  HINT/outputs/EU47_NImotif_enrich.sbatch
+    Untracked:  HINT/outputs/EU47_NImotif_match.sbatch
+    Untracked:  HINT/outputs/Eu37_Flu.sbatch
+    Untracked:  HINT/outputs/Eu37_Flumotif_match.sbatch
+    Untracked:  HINT/outputs/Eu39_NI.sbatch
+    Untracked:  HINT/outputs/Eu39_NImotif_match.sbatch
+    Untracked:  HINT/outputs/NFKB_only/
+    Untracked:  HINT/outputs/all_foots.txt
+    Untracked:  HINT/outputs/all_mot.txt
+    Untracked:  HINT/outputs/count_footprints.nb.html
+    Untracked:  HINT/outputs/count_occ.py
+    Untracked:  HINT/outputs/counts.txt
+    Untracked:  HINT/outputs/counts_enh.txt
+    Untracked:  HINT/outputs/counts_mpbs.txt
+    Untracked:  HINT/outputs/counts_mpbs_enh.txt
+    Untracked:  HINT/outputs/counts_nfkb.txt
+    Untracked:  HINT/outputs/counts_nfkb_mpbs.txt
+    Untracked:  HINT/outputs/counts_nfkb_mpbs_enh.txt
+    Untracked:  HINT/outputs/differential.sbatch
+    Untracked:  HINT/outputs/differential/
+    Untracked:  HINT/outputs/differential_/
+    Untracked:  HINT/outputs/differential_AF04.sbatch
+    Untracked:  HINT/outputs/differential_AF06.sbatch
+    Untracked:  HINT/outputs/differential_AF08.sbatch
+    Untracked:  HINT/outputs/differential_AF10.sbatch
+    Untracked:  HINT/outputs/differential_AF12.sbatch
+    Untracked:  HINT/outputs/differential_AF14.sbatch
+    Untracked:  HINT/outputs/differential_AF16.sbatch
+    Untracked:  HINT/outputs/differential_AF18.sbatch
+    Untracked:  HINT/outputs/differential_AF20.sbatch
+    Untracked:  HINT/outputs/differential_AF22.sbatch
+    Untracked:  HINT/outputs/differential_AF24.sbatch
+    Untracked:  HINT/outputs/differential_AF26.sbatch
+    Untracked:  HINT/outputs/differential_AF28.sbatch
+    Untracked:  HINT/outputs/differential_AF30.sbatch
+    Untracked:  HINT/outputs/differential_AF34.sbatch
+    Untracked:  HINT/outputs/differential_AF36.sbatch
+    Untracked:  HINT/outputs/differential_AF38.sbatch
+    Untracked:  HINT/outputs/differential_EU03.sbatch
+    Untracked:  HINT/outputs/differential_EU05.sbatch
+    Untracked:  HINT/outputs/differential_EU07.sbatch
+    Untracked:  HINT/outputs/differential_EU09.sbatch
+    Untracked:  HINT/outputs/differential_EU13.sbatch
+    Untracked:  HINT/outputs/differential_EU15.sbatch
+    Untracked:  HINT/outputs/differential_EU17.sbatch
+    Untracked:  HINT/outputs/differential_EU19.sbatch
+    Untracked:  HINT/outputs/differential_EU21.sbatch
+    Untracked:  HINT/outputs/differential_EU25.sbatch
+    Untracked:  HINT/outputs/differential_EU27.sbatch
+    Untracked:  HINT/outputs/differential_EU29.sbatch
+    Untracked:  HINT/outputs/differential_EU33.sbatch
+    Untracked:  HINT/outputs/differential_EU37.sbatch
+    Untracked:  HINT/outputs/differential_EU39.sbatch
+    Untracked:  HINT/outputs/differential_EU41.sbatch
+    Untracked:  HINT/outputs/differential_EU43.sbatch
+    Untracked:  HINT/outputs/differential_EU47.sbatch
+    Untracked:  HINT/outputs/footprint_counts.jpeg
+    Untracked:  HINT/outputs/logs/
+    Untracked:  HINT/outputs/sedOWF69s
+    Untracked:  HINT/outputs/slurm-2770294.out
+    Untracked:  HINT/outputs/slurm-2770295.out
+    Untracked:  HINT/outputs/slurm-2770296.out
+    Untracked:  HINT/outputs/slurm-2770297.out
+    Untracked:  HINT/outputs/slurm-2780644.out
+    Untracked:  HINT/outputs/slurm-2780645.out
+    Untracked:  HINT/outputs/slurm-2780646.out
+    Untracked:  HINT/outputs/slurm-2780647.out
+    Untracked:  HINT/outputs/slurm-2780648.out
+    Untracked:  HINT/outputs/slurm-2780649.out
+    Untracked:  HINT/outputs/slurm-2780650.out
+    Untracked:  HINT/outputs/slurm-2780651.out
+    Untracked:  HINT/outputs/slurm-2780652.out
+    Untracked:  HINT/outputs/slurm-2780653.out
+    Untracked:  HINT/outputs/slurm-2780654.out
+    Untracked:  HINT/outputs/slurm-2780655.out
+    Untracked:  HINT/outputs/slurm-2780656.out
+    Untracked:  HINT/outputs/slurm-2780657.out
+    Untracked:  HINT/outputs/slurm-2780658.out
+    Untracked:  HINT/outputs/slurm-2780659.out
+    Untracked:  HINT/outputs/slurm-2780660.out
+    Untracked:  HINT/outputs/slurm-2780661.out
+    Untracked:  HINT/outputs/slurm-2780662.out
+    Untracked:  HINT/outputs/slurm-2780663.out
+    Untracked:  HINT/outputs/slurm-2780664.out
+    Untracked:  HINT/outputs/slurm-2780665.out
+    Untracked:  HINT/outputs/slurm-2780666.out
+    Untracked:  HINT/outputs/slurm-2780667.out
+    Untracked:  HINT/outputs/slurm-2780668.out
+    Untracked:  HINT/outputs/slurm-2780669.out
+    Untracked:  HINT/outputs/slurm-2780670.out
+    Untracked:  HINT/outputs/slurm-2780671.out
+    Untracked:  HINT/outputs/slurm-2780672.out
+    Untracked:  HINT/outputs/slurm-2780673.out
+    Untracked:  HINT/outputs/slurm-2780674.out
+    Untracked:  HINT/outputs/slurm-2780675.out
+    Untracked:  HINT/outputs/slurm-2780676.out
+    Untracked:  HINT/outputs/slurm-2780677.out
+    Untracked:  HINT/outputs/slurm-2780678.out
+    Untracked:  HINT/outputs/slurm-2780679.out
+    Untracked:  HINT/outputs/slurm-2780680.out
+    Untracked:  HINT/outputs/slurm-2780681.out
+    Untracked:  HINT/outputs/slurm-2780682.out
+    Untracked:  HINT/outputs/slurm-2780683.out
+    Untracked:  HINT/outputs/slurm-2780684.out
+    Untracked:  HINT/outputs/slurm-2780685.out
+    Untracked:  HINT/outputs/slurm-2780686.out
+    Untracked:  HINT/outputs/slurm-2780687.out
+    Untracked:  HINT/outputs/slurm-2780688.out
+    Untracked:  HINT/outputs/slurm-2780689.out
+    Untracked:  HINT/outputs/slurm-2780690.out
+    Untracked:  HINT/outputs/slurm-2780691.out
+    Untracked:  HINT/outputs/slurm-2780692.out
+    Untracked:  HINT/outputs/slurm-2780693.out
+    Untracked:  HINT/outputs/slurm-2780694.out
+    Untracked:  HINT/outputs/slurm-2780695.out
+    Untracked:  HINT/outputs/slurm-2780696.out
+    Untracked:  HINT/outputs/slurm-2780697.out
+    Untracked:  HINT/outputs/slurm-2780698.out
+    Untracked:  HINT/outputs/slurm-2780699.out
+    Untracked:  HINT/outputs/slurm-2780700.out
+    Untracked:  HINT/outputs/slurm-2780701.out
+    Untracked:  HINT/outputs/slurm-2780702.out
+    Untracked:  HINT/outputs/slurm-2780703.out
+    Untracked:  HINT/outputs/slurm-2780704.out
+    Untracked:  HINT/outputs/slurm-2780705.out
+    Untracked:  HINT/outputs/slurm-2780706.out
+    Untracked:  HINT/outputs/slurm-2780707.out
+    Untracked:  HINT/outputs/slurm-2780708.out
+    Untracked:  HINT/outputs/slurm-2780709.out
+    Untracked:  HINT/outputs/slurm-2780710.out
+    Untracked:  HINT/outputs/slurm-2780711.out
+    Untracked:  HINT/outputs/slurm-2780712.out
+    Untracked:  HINT/outputs/slurm-2780713.out
+    Untracked:  HINT/outputs/slurm-2780797.out
+    Untracked:  HINT/outputs/slurm-2780798.out
+    Untracked:  HINT/outputs/slurm-2780799.out
+    Untracked:  HINT/outputs/slurm-2780800.out
+    Untracked:  HINT/outputs/slurm-2780801.out
+    Untracked:  HINT/outputs/slurm-2780802.out
+    Untracked:  HINT/outputs/slurm-2780803.out
+    Untracked:  HINT/outputs/slurm-2780804.out
+    Untracked:  HINT/outputs/slurm-2780805.out
+    Untracked:  HINT/outputs/slurm-2780806.out
+    Untracked:  HINT/outputs/slurm-2780807.out
+    Untracked:  HINT/outputs/slurm-2780808.out
+    Untracked:  HINT/outputs/slurm-2780809.out
+    Untracked:  HINT/outputs/slurm-2780810.out
+    Untracked:  HINT/outputs/slurm-2780811.out
+    Untracked:  HINT/outputs/slurm-2780812.out
+    Untracked:  HINT/outputs/slurm-2780813.out
+    Untracked:  HINT/outputs/slurm-2780814.out
+    Untracked:  HINT/outputs/slurm-2780815.out
+    Untracked:  HINT/outputs/slurm-2780816.out
+    Untracked:  HINT/outputs/slurm-2780817.out
+    Untracked:  HINT/outputs/slurm-2780818.out
+    Untracked:  HINT/outputs/slurm-2780819.out
+    Untracked:  HINT/outputs/slurm-2780820.out
+    Untracked:  HINT/outputs/slurm-2780821.out
+    Untracked:  HINT/outputs/slurm-2780822.out
+    Untracked:  HINT/outputs/slurm-2780823.out
+    Untracked:  HINT/outputs/slurm-2780824.out
+    Untracked:  HINT/outputs/slurm-2780825.out
+    Untracked:  HINT/outputs/slurm-2780826.out
+    Untracked:  HINT/outputs/slurm-2780827.out
+    Untracked:  HINT/outputs/slurm-2780828.out
+    Untracked:  HINT/outputs/slurm-2780829.out
+    Untracked:  HINT/outputs/slurm-2780830.out
+    Untracked:  HINT/outputs/slurm-2780831.out
+    Untracked:  HINT/outputs/slurm-2780832.out
+    Untracked:  HINT/outputs/slurm-2780833.out
+    Untracked:  HINT/outputs/slurm-2780834.out
+    Untracked:  HINT/outputs/slurm-2780835.out
+    Untracked:  HINT/outputs/slurm-2780836.out
+    Untracked:  HINT/outputs/slurm-2780837.out
+    Untracked:  HINT/outputs/slurm-2780838.out
+    Untracked:  HINT/outputs/slurm-2780839.out
+    Untracked:  HINT/outputs/slurm-2780840.out
+    Untracked:  HINT/outputs/slurm-2780841.out
+    Untracked:  HINT/outputs/slurm-2780842.out
+    Untracked:  HINT/outputs/slurm-2780843.out
+    Untracked:  HINT/outputs/slurm-2780844.out
+    Untracked:  HINT/outputs/slurm-2780845.out
+    Untracked:  HINT/outputs/slurm-2780846.out
+    Untracked:  HINT/outputs/slurm-2780847.out
+    Untracked:  HINT/outputs/slurm-2780848.out
+    Untracked:  HINT/outputs/slurm-2780849.out
+    Untracked:  HINT/outputs/slurm-2780850.out
+    Untracked:  HINT/outputs/slurm-2780851.out
+    Untracked:  HINT/outputs/slurm-2780853.out
+    Untracked:  HINT/outputs/slurm-2780854.out
+    Untracked:  HINT/outputs/slurm-2780855.out
+    Untracked:  HINT/outputs/slurm-2780856.out
+    Untracked:  HINT/outputs/slurm-2780857.out
+    Untracked:  HINT/outputs/slurm-2780858.out
+    Untracked:  HINT/outputs/slurm-2780859.out
+    Untracked:  HINT/outputs/slurm-2780860.out
+    Untracked:  HINT/outputs/slurm-2780861.out
+    Untracked:  HINT/outputs/slurm-2780862.out
+    Untracked:  HINT/outputs/slurm-2780863.out
+    Untracked:  HINT/outputs/slurm-2780864.out
+    Untracked:  HINT/outputs/slurm-2780865.out
+    Untracked:  HINT/outputs/slurm-2780867.out
+    Untracked:  HINT/outputs/slurm-2780868.out
+    Untracked:  HINT/outputs/slurm-2781018.out
+    Untracked:  HINT/outputs/slurm-2781019.out
+    Untracked:  HINT/outputs/slurm-2781020.out
+    Untracked:  HINT/outputs/slurm-2781021.out
+    Untracked:  HINT/outputs/slurm-2781022.out
+    Untracked:  HINT/outputs/slurm-2781023.out
+    Untracked:  HINT/outputs/slurm-2781024.out
+    Untracked:  HINT/outputs/slurm-2781025.out
+    Untracked:  HINT/outputs/slurm-2781026.out
+    Untracked:  HINT/outputs/slurm-2781027.out
+    Untracked:  HINT/outputs/slurm-2781028.out
+    Untracked:  HINT/outputs/slurm-2781029.out
+    Untracked:  HINT/outputs/slurm-2781030.out
+    Untracked:  HINT/outputs/slurm-2781031.out
+    Untracked:  HINT/outputs/slurm-2781032.out
+    Untracked:  HINT/outputs/slurm-2781033.out
+    Untracked:  HINT/outputs/slurm-2781034.out
+    Untracked:  HINT/outputs/slurm-2781035.out
+    Untracked:  HINT/outputs/slurm-2781036.out
+    Untracked:  HINT/outputs/slurm-2781037.out
+    Untracked:  HINT/outputs/slurm-2781038.out
+    Untracked:  HINT/outputs/slurm-2781039.out
+    Untracked:  HINT/outputs/slurm-2781040.out
+    Untracked:  HINT/outputs/slurm-2781041.out
+    Untracked:  HINT/outputs/slurm-2781042.out
+    Untracked:  HINT/outputs/slurm-2781043.out
+    Untracked:  HINT/outputs/slurm-2781044.out
+    Untracked:  HINT/outputs/slurm-2781045.out
+    Untracked:  HINT/outputs/slurm-2781046.out
+    Untracked:  HINT/outputs/slurm-2781047.out
+    Untracked:  HINT/outputs/slurm-2781048.out
+    Untracked:  HINT/outputs/slurm-2781049.out
+    Untracked:  HINT/outputs/slurm-2781050.out
+    Untracked:  HINT/outputs/slurm-2781051.out
+    Untracked:  HINT/outputs/slurm-2781052.out
+    Untracked:  HINT/outputs/slurm-2781053.out
+    Untracked:  HINT/outputs/slurm-2781054.out
+    Untracked:  HINT/outputs/slurm-2781055.out
+    Untracked:  HINT/outputs/slurm-2781056.out
+    Untracked:  HINT/outputs/slurm-2781057.out
+    Untracked:  HINT/outputs/slurm-2781058.out
+    Untracked:  HINT/outputs/slurm-2781059.out
+    Untracked:  HINT/outputs/slurm-2781060.out
+    Untracked:  HINT/outputs/slurm-2781061.out
+    Untracked:  HINT/outputs/slurm-2781062.out
+    Untracked:  HINT/outputs/slurm-2781063.out
+    Untracked:  HINT/outputs/slurm-2781064.out
+    Untracked:  HINT/outputs/slurm-2781065.out
+    Untracked:  HINT/outputs/slurm-2781066.out
+    Untracked:  HINT/outputs/slurm-2781067.out
+    Untracked:  HINT/outputs/slurm-2781068.out
+    Untracked:  HINT/outputs/slurm-2781069.out
+    Untracked:  HINT/outputs/slurm-2781070.out
+    Untracked:  HINT/outputs/slurm-2781071.out
+    Untracked:  HINT/outputs/slurm-2781072.out
+    Untracked:  HINT/outputs/slurm-2781073.out
+    Untracked:  HINT/outputs/slurm-2781074.out
+    Untracked:  HINT/outputs/slurm-2781075.out
+    Untracked:  HINT/outputs/slurm-2781076.out
+    Untracked:  HINT/outputs/slurm-2781077.out
+    Untracked:  HINT/outputs/slurm-2781078.out
+    Untracked:  HINT/outputs/slurm-2781079.out
+    Untracked:  HINT/outputs/slurm-2781080.out
+    Untracked:  HINT/outputs/slurm-2781081.out
+    Untracked:  HINT/outputs/slurm-2781082.out
+    Untracked:  HINT/outputs/slurm-2781083.out
+    Untracked:  HINT/outputs/slurm-2781084.out
+    Untracked:  HINT/outputs/slurm-2781085.out
+    Untracked:  HINT/outputs/slurm-2781086.out
+    Untracked:  HINT/outputs/slurm-2781087.out
+    Untracked:  HINT/outputs/slurm-2781159.out
+    Untracked:  HINT/outputs/slurm-2781160.out
+    Untracked:  HINT/outputs/slurm-2781161.out
+    Untracked:  HINT/outputs/slurm-2781162.out
+    Untracked:  HINT/outputs/slurm-2781163.out
+    Untracked:  HINT/outputs/slurm-2781164.out
+    Untracked:  HINT/outputs/slurm-2781165.out
+    Untracked:  HINT/outputs/slurm-2781166.out
+    Untracked:  HINT/outputs/slurm-2781167.out
+    Untracked:  HINT/outputs/slurm-2781168.out
+    Untracked:  HINT/outputs/slurm-2781169.out
+    Untracked:  HINT/outputs/slurm-2781170.out
+    Untracked:  HINT/outputs/slurm-2781171.out
+    Untracked:  HINT/outputs/slurm-2781173.out
+    Untracked:  HINT/outputs/slurm-2781174.out
+    Untracked:  HINT/outputs/slurm-2781175.out
+    Untracked:  HINT/outputs/slurm-2781176.out
+    Untracked:  HINT/outputs/slurm-2781177.out
+    Untracked:  HINT/outputs/slurm-2781178.out
+    Untracked:  HINT/outputs/slurm-2781179.out
+    Untracked:  HINT/outputs/slurm-2781180.out
+    Untracked:  HINT/outputs/slurm-2781181.out
+    Untracked:  HINT/outputs/slurm-2781182.out
+    Untracked:  HINT/outputs/slurm-2781183.out
+    Untracked:  HINT/outputs/slurm-2781184.out
+    Untracked:  HINT/outputs/slurm-2781185.out
+    Untracked:  HINT/outputs/slurm-2781186.out
+    Untracked:  HINT/outputs/slurm-2781187.out
+    Untracked:  HINT/outputs/slurm-2781188.out
+    Untracked:  HINT/outputs/slurm-2781189.out
+    Untracked:  HINT/outputs/slurm-2781190.out
+    Untracked:  HINT/outputs/slurm-2781191.out
+    Untracked:  HINT/outputs/slurm-2781192.out
+    Untracked:  HINT/outputs/slurm-2781193.out
+    Untracked:  HINT/outputs/slurm-2781194.out
+    Untracked:  HINT/outputs/slurm-2781195.out
+    Untracked:  HINT/outputs/slurm-2781196.out
+    Untracked:  HINT/outputs/slurm-2781197.out
+    Untracked:  HINT/outputs/slurm-2781198.out
+    Untracked:  HINT/outputs/slurm-2781199.out
+    Untracked:  HINT/outputs/slurm-2781200.out
+    Untracked:  HINT/outputs/slurm-2781202.out
+    Untracked:  HINT/outputs/slurm-2781203.out
+    Untracked:  HINT/outputs/slurm-2781204.out
+    Untracked:  HINT/outputs/slurm-2781205.out
+    Untracked:  HINT/outputs/slurm-2781206.out
+    Untracked:  HINT/outputs/slurm-2781207.out
+    Untracked:  HINT/outputs/slurm-2781208.out
+    Untracked:  HINT/outputs/slurm-2781209.out
+    Untracked:  HINT/outputs/slurm-2781210.out
+    Untracked:  HINT/outputs/slurm-2781211.out
+    Untracked:  HINT/outputs/slurm-2781212.out
+    Untracked:  HINT/outputs/slurm-2781213.out
+    Untracked:  HINT/outputs/slurm-2781215.out
+    Untracked:  HINT/outputs/slurm-2781216.out
+    Untracked:  HINT/outputs/slurm-2781217.out
+    Untracked:  HINT/outputs/slurm-2781219.out
+    Untracked:  HINT/outputs/slurm-2781220.out
+    Untracked:  HINT/outputs/slurm-2781221.out
+    Untracked:  HINT/outputs/slurm-2781222.out
+    Untracked:  HINT/outputs/slurm-2781223.out
+    Untracked:  HINT/outputs/slurm-2781224.out
+    Untracked:  HINT/outputs/slurm-2781225.out
+    Untracked:  HINT/outputs/slurm-2781226.out
+    Untracked:  HINT/outputs/slurm-2781227.out
+    Untracked:  HINT/outputs/slurm-2781228.out
+    Untracked:  HINT/outputs/slurm-2781229.out
+    Untracked:  HINT/outputs/slurm-2781230.out
+    Untracked:  HINT/outputs/slurm-2781231.out
+    Untracked:  HINT/outputs/slurm-2781232.out
+    Untracked:  HINT/outputs/slurm-2781236.out
+    Untracked:  HINT/outputs/slurm-2781237.out
+    Untracked:  HINT/outputs/slurm-2781238.out
+    Untracked:  HINT/outputs/slurm-2781239.out
+    Untracked:  HINT/outputs/slurm-2781240.out
+    Untracked:  HINT/outputs/slurm-2781241.out
+    Untracked:  HINT/outputs/slurm-2781242.out
+    Untracked:  HINT/outputs/slurm-2781243.out
+    Untracked:  HINT/outputs/slurm-2781244.out
+    Untracked:  HINT/outputs/slurm-2781245.out
+    Untracked:  HINT/outputs/slurm-2781246.out
+    Untracked:  HINT/outputs/slurm-2781247.out
+    Untracked:  HINT/outputs/slurm-2781248.out
+    Untracked:  HINT/outputs/slurm-2781249.out
+    Untracked:  HINT/outputs/slurm-2781250.out
+    Untracked:  HINT/outputs/slurm-2781251.out
+    Untracked:  HINT/outputs/slurm-2781252.out
+    Untracked:  HINT/outputs/slurm-2781253.out
+    Untracked:  HINT/outputs/slurm-2781254.out
+    Untracked:  HINT/outputs/slurm-2781255.out
+    Untracked:  HINT/outputs/slurm-2781256.out
+    Untracked:  HINT/outputs/slurm-2781257.out
+    Untracked:  HINT/outputs/slurm-2781258.out
+    Untracked:  HINT/outputs/slurm-2781259.out
+    Untracked:  HINT/outputs/slurm-2781260.out
+    Untracked:  HINT/outputs/slurm-2781261.out
+    Untracked:  HINT/outputs/slurm-2781262.out
+    Untracked:  HINT/outputs/slurm-2781263.out
+    Untracked:  HINT/outputs/slurm-2781264.out
+    Untracked:  HINT/outputs/slurm-2781265.out
+    Untracked:  HINT/outputs/slurm-2781266.out
+    Untracked:  HINT/outputs/slurm-2781267.out
+    Untracked:  HINT/outputs/slurm-2781268.out
+    Untracked:  HINT/outputs/slurm-2781269.out
+    Untracked:  HINT/outputs/slurm-2781270.out
+    Untracked:  HINT/outputs/slurm-2781271.out
+    Untracked:  HINT/outputs/slurm-2781272.out
+    Untracked:  HINT/outputs/slurm-2781273.out
+    Untracked:  HINT/outputs/slurm-2781274.out
+    Untracked:  HINT/outputs/slurm-2781275.out
+    Untracked:  HINT/outputs/slurm-2781278.out
+    Untracked:  HINT/outputs/slurm-2781279.out
+    Untracked:  HINT/outputs/slurm-2781280.out
+    Untracked:  HINT/outputs/slurm-2781281.out
+    Untracked:  HINT/outputs/slurm-2781282.out
+    Untracked:  HINT/outputs/slurm-2781283.out
+    Untracked:  HINT/outputs/slurm-2781284.out
+    Untracked:  HINT/outputs/slurm-2781285.out
+    Untracked:  HINT/outputs/slurm-2781286.out
+    Untracked:  HINT/outputs/slurm-2781287.out
+    Untracked:  HINT/outputs/slurm-2781288.out
+    Untracked:  HINT/outputs/slurm-2781289.out
+    Untracked:  HINT/outputs/slurm-2781290.out
+    Untracked:  HINT/outputs/slurm-2781291.out
+    Untracked:  HINT/outputs/slurm-2781292.out
+    Untracked:  HINT/outputs/slurm-2781293.out
+    Untracked:  HINT/outputs/slurm-2781294.out
+    Untracked:  HINT/outputs/slurm-2781295.out
+    Untracked:  HINT/outputs/slurm-2781296.out
+    Untracked:  HINT/outputs/slurm-2781297.out
+    Untracked:  HINT/outputs/slurm-2781298.out
+    Untracked:  HINT/outputs/slurm-2781299.out
+    Untracked:  HINT/outputs/slurm-2781300.out
+    Untracked:  HINT/outputs/slurm-2781301.out
+    Untracked:  HINT/outputs/slurm-2781302.out
+    Untracked:  HINT/outputs/slurm-2781303.out
+    Untracked:  HINT/outputs/slurm-2781304.out
+    Untracked:  HINT/outputs/slurm-2781305.out
+    Untracked:  HINT/outputs/slurm-2781306.out
+    Untracked:  HINT/outputs/slurm-2781307.out
+    Untracked:  HINT/outputs/slurm-2781338.out
+    Untracked:  HINT/outputs/slurm-2781339.out
+    Untracked:  HINT/outputs/slurm-2781340.out
+    Untracked:  HINT/outputs/slurm-2781341.out
+    Untracked:  HINT/outputs/slurm-2781342.out
+    Untracked:  HINT/outputs/slurm-2781343.out
+    Untracked:  HINT/outputs/slurm-2781344.out
+    Untracked:  HINT/outputs/slurm-2781345.out
+    Untracked:  HINT/outputs/slurm-2781346.out
+    Untracked:  HINT/outputs/slurm-2781347.out
+    Untracked:  HINT/outputs/slurm-2781348.out
+    Untracked:  HINT/outputs/slurm-2781349.out
+    Untracked:  HINT/outputs/slurm-2781350.out
+    Untracked:  HINT/outputs/slurm-2781351.out
+    Untracked:  HINT/outputs/slurm-2781352.out
+    Untracked:  HINT/outputs/slurm-2781353.out
+    Untracked:  HINT/outputs/slurm-2781354.out
+    Untracked:  HINT/outputs/slurm-2781355.out
+    Untracked:  HINT/outputs/slurm-2781356.out
+    Untracked:  HINT/outputs/slurm-2781357.out
+    Untracked:  HINT/outputs/slurm-2781358.out
+    Untracked:  HINT/outputs/slurm-2781359.out
+    Untracked:  HINT/outputs/slurm-2781360.out
+    Untracked:  HINT/outputs/slurm-2781361.out
+    Untracked:  HINT/outputs/slurm-2781362.out
+    Untracked:  HINT/outputs/slurm-2781363.out
+    Untracked:  HINT/outputs/slurm-2781364.out
+    Untracked:  HINT/outputs/slurm-2781365.out
+    Untracked:  HINT/outputs/slurm-2781366.out
+    Untracked:  HINT/outputs/slurm-2781367.out
+    Untracked:  HINT/outputs/slurm-2781368.out
+    Untracked:  HINT/outputs/slurm-2781369.out
+    Untracked:  HINT/outputs/slurm-2781370.out
+    Untracked:  HINT/outputs/slurm-2781371.out
+    Untracked:  HINT/outputs/slurm-2781372.out
+    Untracked:  HINT/outputs/slurm-2786435.out
+    Untracked:  HINT/outputs/tracks/
+    Untracked:  Infection_effects/
+    Untracked:  MacFlu_datasets.tar
+    Untracked:  Matrix_eQTL/
+    Untracked:  Motif/
+    Untracked:  Natural-Selection-HG-and-AG-2019/
+    Untracked:  Overall_Data/
+    Untracked:  PopDE/
+    Untracked:  PopDR/
+    Untracked:  RASQUAL/
+    Untracked:  RNAseq/
+    Untracked:  WASP/filter_wasp_output/
+    Untracked:  WASP/h5_output/
+    Untracked:  WASP/sedcx7kUx
+    Untracked:  WASP/star_output/
+    Untracked:  WASPrnaseq.bed
+    Untracked:  WGBS/
+    Untracked:  WGS/
+    Untracked:  admixture/
+    Untracked:  data/
+    Untracked:  genpipes_inputs/
+    Untracked:  variant_calling/
+
+Unstaged changes:
+    Modified:   HINT/outputs/_workflowr.yml
+    Modified:   HINT/outputs/analysis/count_footprints.Rmd
+    Deleted:    WASP/WASP.sbatch
+    Deleted:    WASP/auto_submit.py
+    Deleted:    WASP/filter_WASP.py
+    Deleted:    WASP/phasing_steps/01_split_dataset_by_chr.sh
+    Deleted:    WASP/phasing_steps/02-re-arrange_genetic_map_files.sh
+    Deleted:    WASP/phasing_steps/03-using_shapeit.py
+    Deleted:    WASP/phasing_steps/03-using_shapeit.sh
+    Deleted:    WASP/rnaseq_pipeline_paired_WASP.py
+    Deleted:    WASP/submit_WASP.sh
+
+</code></pre>
+<p>
+Note that any generated files, e.g. HTML, png, CSS, etc., are not included in this status report because it is ok for generated content to have uncommitted changes.
+</p>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</div>
+<div id="versions" class="tab-pane fade">
+
+<p>
+These are the previous versions of the R Markdown and HTML files. If you’ve configured a remote Git repository (see <code>?wflow_git_remote</code>), click on the hyperlinks in the table below to view them.
+</p>
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+File
+</th>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+<th>
+Message
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/SaideepGona/EMC_Footprint_Analysis/blob/cf8bcd4e84214d76acc576e7a1b6d540b28463c8/HINT/outputs/analysis/license.Rmd" target="_blank">cf8bcd4</a>
+</td>
+<td>
+SaideepGona
+</td>
+<td>
+2020-07-03
+</td>
+<td>
+Start workflowr project.
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<p>What license are you using for your code? See <a href="http://choosealicense.com/">choosealicense.com</a> for help deciding. It’s a convention to save a file <code>LICENSE</code> in the root of your Git repo that contains the license text.</p>
+<p>What license are you using for the written content on your site? It is traditional to choose a <a href="https://creativecommons.org/choose/">Creative Commons</a> license for this type of content.</p>
+<p>How should others cite your work? It’s a convention to save a file <code>CITATION</code> in the root of your Git repo that contains the citation information.</p>
+
+
+<!-- Adjust MathJax settings so that all math formulae are shown using
+TeX fonts only; see
+http://docs.mathjax.org/en/latest/configuration.html.  This will make
+the presentation more consistent at the cost of the webpage sometimes
+taking slightly longer to load. Note that this only works because the
+footer is added to webpages before the MathJax javascript. -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
