@@ -11,7 +11,7 @@
 
 
 
-<title>About</title>
+<title>R Notebook</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -248,6 +251,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -255,6 +321,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -299,7 +375,7 @@ div.section {
 
 
 
-<h1 class="title toc-ignore">About</h1>
+<h1 class="title toc-ignore">R Notebook</h1>
 
 </div>
 
@@ -327,7 +403,7 @@ div.section {
 <strong>Last updated:</strong> 2020-07-03
 </p>
 <p>
-<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 2 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
+<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
 </p>
 <p>
 <strong>Knit directory:</strong> <code>outputs/analysis/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
@@ -349,6 +425,66 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div id="strongRMarkdownfilestronguptodate" class="panel-collapse collapse">
 <div class="panel-body">
 <p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongEnvironmentstrongempty"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Environment:</strong> empty </a>
+</p>
+</div>
+<div id="strongEnvironmentstrongempty" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great job! The global environment was empty. Objects defined in the global environment can affect the analysis in your R Markdown file in unknown ways. For reproduciblity it’s best to always run the code in an empty environment.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongSeedstrongcodesetseed20200703code"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Seed:</strong> <code>set.seed(20200703)</code> </a>
+</p>
+</div>
+<div id="strongSeedstrongcodesetseed20200703code" class="panel-collapse collapse">
+<div class="panel-body">
+<p>The command <code>set.seed(20200703)</code> was run prior to running the code in the R Markdown file. Setting a seed ensures that any results that rely on randomness, e.g. subsampling or permutations, are reproducible.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongSessioninformationstrongrecorded"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Session information:</strong> recorded </a>
+</p>
+</div>
+<div id="strongSessioninformationstrongrecorded" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great job! Recording the operating system, R version, and package versions is critical for reproducibility.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongCachestrongnone"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Cache:</strong> none </a>
+</p>
+</div>
+<div id="strongCachestrongnone" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Nice! There were no cached chunks for this analysis, so you can be confident that you successfully produced the results during this run.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongFilepathsstrongrelative"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>File paths:</strong> relative </a>
+</p>
+</div>
+<div id="strongFilepathsstrongrelative" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great job! Using relative paths to the files within your workflowr project makes it easier to run your code on other machines.</p>
 </div>
 </div>
 </div>
@@ -1625,10 +1761,10 @@ Message
 <tbody>
 <tr>
 <td>
-html
+Rmd
 </td>
 <td>
-<a href="https://rawcdn.githack.com/SaideepGona/EMC_Footprint_Analysis/6b7db904c9f9955e0fe92e29791c7c4a725b38e5/HINT/outputs/docs/about.html" target="_blank">6b7db90</a>
+<a href="https://github.com/SaideepGona/EMC_Footprint_Analysis/blob/f2a65acb087cb584af1a44b4b3d1791f867fc4bb/HINT/outputs/analysis/count_footprints.Rmd" target="_blank">f2a65ac</a>
 </td>
 <td>
 SaideepGona
@@ -1637,7 +1773,7 @@ SaideepGona
 2020-07-03
 </td>
 <td>
-Build site.
+Add footprint counts
 </td>
 </tr>
 <tr>
@@ -1645,7 +1781,7 @@ Build site.
 Rmd
 </td>
 <td>
-<a href="https://github.com/SaideepGona/EMC_Footprint_Analysis/blob/cf8bcd4e84214d76acc576e7a1b6d540b28463c8/HINT/outputs/analysis/about.Rmd" target="_blank">cf8bcd4</a>
+<a href="https://github.com/SaideepGona/EMC_Footprint_Analysis/blob/8b8b751026de3f4f188175b81194aa39b16e8c5e/HINT/outputs/analysis/count_footprints.Rmd" target="_blank">8b8b751</a>
 </td>
 <td>
 SaideepGona
@@ -1654,7 +1790,7 @@ SaideepGona
 2020-07-03
 </td>
 <td>
-Start workflowr project.
+Add footprint counting
 </td>
 </tr>
 </tbody>
@@ -1664,7 +1800,129 @@ Start workflowr project.
 </div>
 </div>
 </div>
-<p>Describe your project.</p>
+<p>This is an <a href="http://rmarkdown.rstudio.com">R Markdown</a> Notebook. When you execute code within the notebook, the results appear beneath the code.</p>
+<p>Try executing this chunk by clicking the <em>Run</em> button within the chunk or by placing your cursor inside it and pressing <em>Ctrl+Shift+Enter</em>.</p>
+<pre class="r"><code>library(ggplot2)
+library(workflowr)</code></pre>
+<pre class="r"><code>df &lt;- read.table(file = &#39;./../counts.txt&#39;, sep = &#39;\t&#39;,header = TRUE)
+
+df_no_single &lt;- df[order(df$Ind),]
+
+
+colors = rep(c(&quot;blue&quot;, &quot;red&quot;), dim(df_no_single)[1]/2)
+
+barplot(df_no_single$Counts, names.arg = df_no_single$Ind_p, col = colors, main=&quot;Genome-wide ATACseq footprint counts&quot;, legend=c(&quot;Flu&quot;, &quot;NI&quot;), las=2)</code></pre>
+<p><img src="figure/count_footprints.Rmd/Genome-wide%20footprint%20counts-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>barplot(df_no_single$Mean_Size, names.arg = df_no_single$Ind_p, col = colors, main=&quot;Genome-wide ATACseq footprint mean size&quot;, legend=c(&quot;Flu&quot;, &quot;NI&quot;), las=2)</code></pre>
+<p><img src="figure/count_footprints.Rmd/Genome-wide%20footprint%20counts-2.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>#ggplot(data=df, aes(Ind)) +
+#  geom_bar() +
+#  labs(title=&quot;MA0105.4.NFKB1 Average ATACseq Profile (Flu - NI)&quot;)</code></pre>
+<pre class="r"><code>df &lt;- read.table(file = &#39;./../counts_mpbs.txt&#39;, sep = &#39;\t&#39;,header = TRUE)
+
+df_no_single &lt;- df[order(df$Ind),]
+
+
+
+
+colors = rep(c(&quot;blue&quot;, &quot;red&quot;), dim(df_no_single)[1]/2)
+
+barplot(df_no_single$Counts, names.arg = df_no_single$Ind, col = colors, main=&quot;Genome-wide Motif match counts&quot;, legend=c(&quot;Flu&quot;, &quot;NI&quot;), las=2)</code></pre>
+<p><img src="figure/count_footprints.Rmd/Genome-wide%20motif%20match%20counts-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>barplot(df_no_single$Mean_Size, names.arg = df_no_single$Ind_p, col = colors, main=&quot;Genome-wide Motif match mean size&quot;, legend=c(&quot;Flu&quot;, &quot;NI&quot;), las=2)</code></pre>
+<p><img src="figure/count_footprints.Rmd/Genome-wide%20motif%20match%20counts-2.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>#ggplot(data=df, aes(Ind)) +
+#  geom_bar() +
+#  labs(title=&quot;MA0105.4.NFKB1 Average ATACseq Profile (Flu - NI)&quot;)</code></pre>
+<pre class="r"><code>df &lt;- read.table(file = &#39;./../counts_nfkb_mpbs.txt&#39;, sep = &#39;\t&#39;,header = TRUE)
+
+df_no_single &lt;- df[order(df$Ind),]
+
+
+colors = rep(c(&quot;blue&quot;, &quot;red&quot;), dim(df_no_single)[1]/2)
+
+barplot(df_no_single$Counts, names.arg = df_no_single$Ind, col = colors, main=&quot;Genome-wide NFKB Motif match counts&quot;, legend=c(&quot;Flu&quot;, &quot;NI&quot;), las=2)</code></pre>
+<p><img src="figure/count_footprints.Rmd/Genome-wide%20NFKB1%20Match%20Counts-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>barplot(df_no_single$Mean_Size, names.arg = df_no_single$Ind_p, col = colors, main=&quot;Genome-wide NFKB Motif match mean size&quot;, legend=c(&quot;Flu&quot;, &quot;NI&quot;), las=2)</code></pre>
+<p><img src="figure/count_footprints.Rmd/Genome-wide%20NFKB1%20Match%20Counts-2.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>df &lt;- read.table(file = &#39;./../counts_enh.txt&#39;, sep = &#39;\t&#39;,header = TRUE)
+
+df_no_single &lt;- df[order(df$Ind),]
+
+
+colors = rep(c(&quot;blue&quot;, &quot;red&quot;), dim(df_no_single)[1]/2)
+
+barplot(df_no_single$Counts, names.arg = df_no_single$Ind_p, col = colors, main=&quot;Enhancer-wide ATACseq footprint counts&quot;, legend=c(&quot;Flu&quot;, &quot;NI&quot;), las=2)</code></pre>
+<p><img src="figure/count_footprints.Rmd/Enhancer-wide%20footprint%20counts-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>barplot(df_no_single$Mean_Size, names.arg = df_no_single$Ind_p, col = colors, main=&quot;Enhancer-wide ATACseq footprint mean size&quot;, legend=c(&quot;Flu&quot;, &quot;NI&quot;), las=2)</code></pre>
+<p><img src="figure/count_footprints.Rmd/Enhancer-wide%20footprint%20counts-2.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>#ggplot(data=df, aes(Ind)) +
+#  geom_bar() +
+#  labs(title=&quot;MA0105.4.NFKB1 Average ATACseq Profile (Flu - NI)&quot;)</code></pre>
+<pre class="r"><code>df &lt;- read.table(file = &#39;./../counts_mpbs_enh.txt&#39;, sep = &#39;\t&#39;,header = TRUE)
+
+df_no_single &lt;- df[order(df$Ind),]
+
+
+
+colors = rep(c(&quot;blue&quot;, &quot;red&quot;), dim(df_no_single)[1]/2)
+
+barplot(df_no_single$Counts, names.arg = df_no_single$Ind, col = colors, main=&quot;Enhancer-wide Motif match counts&quot;, legend=c(&quot;Flu&quot;, &quot;NI&quot;), las=2)</code></pre>
+<p><img src="figure/count_footprints.Rmd/Enhancer-wide%20motif%20match%20counts-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>barplot(df_no_single$Mean_Size, names.arg = df_no_single$Ind_p, col = colors, main=&quot;Enhancer-wide Motif match mean size&quot;, legend=c(&quot;Flu&quot;, &quot;NI&quot;), las=2)</code></pre>
+<p><img src="figure/count_footprints.Rmd/Enhancer-wide%20motif%20match%20counts-2.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>df &lt;- read.table(file = &#39;./../counts_nfkb_mpbs_enh.txt&#39;, sep = &#39;\t&#39;,header = TRUE)
+
+df_no_single &lt;- df[order(df$Ind),]
+
+
+colors = rep(c(&quot;blue&quot;, &quot;red&quot;), dim(df_no_single)[1]/2)
+
+barplot(df_no_single$Counts, names.arg = df_no_single$Ind, col = colors, main=&quot;Enhancer-wide NFKB Motif match counts&quot;, legend=c(&quot;Flu&quot;, &quot;NI&quot;), las=2)</code></pre>
+<p><img src="figure/count_footprints.Rmd/Enhancer-wide%20NFKB1%20Match%20Counts-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>barplot(df_no_single$Mean_Size, names.arg = df_no_single$Ind_p, col = colors, main=&quot;Enhancer-wide NFKB Motif match mean size&quot;, legend=c(&quot;Flu&quot;, &quot;NI&quot;), las=2)</code></pre>
+<p><img src="figure/count_footprints.Rmd/Enhancer-wide%20NFKB1%20Match%20Counts-2.png" width="672" style="display: block; margin: auto;" /></p>
+<br>
+<p>
+<button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
+<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Session information
+</button>
+</p>
+<div id="workflowr-sessioninfo" class="collapse">
+<pre class="r"><code>sessionInfo()</code></pre>
+<pre><code>R version 3.6.1 (2019-07-05)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Scientific Linux 7.4 (Nitrogen)
+
+Matrix products: default
+BLAS/LAPACK: /software/openblas-0.2.19-el7-x86_64/lib/libopenblas_haswellp-r0.2.19.so
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+ [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+ [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] ggplot2_3.2.1   workflowr_1.6.0
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_1.0.3       compiler_3.6.1   pillar_1.4.2     later_0.8.0     
+ [5] git2r_0.26.1     tools_3.6.1      digest_0.6.25    evaluate_0.14   
+ [9] lifecycle_0.1.0  tibble_2.1.3     gtable_0.3.0     pkgconfig_2.0.2 
+[13] rlang_0.4.6      yaml_2.2.0       xfun_0.8         withr_2.1.2     
+[17] stringr_1.4.0    dplyr_0.8.3      knitr_1.23       fs_1.3.1        
+[21] rprojroot_1.3-2  grid_3.6.1       tidyselect_1.1.0 glue_1.4.1      
+[25] R6_2.4.0         rmarkdown_2.1    purrr_0.3.4      magrittr_1.5    
+[29] whisker_0.3-2    backports_1.1.4  scales_1.1.0     promises_1.0.1  
+[33] htmltools_0.3.6  assertthat_0.2.1 colorspace_1.4-1 httpuv_1.5.1    
+[37] stringi_1.4.3    lazyeval_0.2.2   munsell_0.5.0    crayon_1.3.4    </code></pre>
+</div>
 
 
 <!-- Adjust MathJax settings so that all math formulae are shown using
@@ -1680,6 +1938,8 @@ footer is added to webpages before the MathJax javascript. -->
 </script>
 
 
+</div>
+</div>
 
 </div>
 
@@ -1712,6 +1972,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
