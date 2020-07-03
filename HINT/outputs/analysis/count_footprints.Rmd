@@ -43,16 +43,16 @@ df_no_single <- df[order(df$Ind),]
 
 colors = rep(c("blue", "red"), dim(df_no_single)[1]/2)
 
-barplot(df_no_single$Counts, names.arg = df_no_single$Ind, col = colors, main="Motif match counts", legend=c("Flu", "NI"), las=2)
+barplot(df_no_single$Counts, names.arg = df_no_single$Ind, col = colors, main="Genome-wide Motif match counts", legend=c("Flu", "NI"), las=2)
 
-barplot(df_no_single$Mean_Size, names.arg = df_no_single$Ind_p, col = colors, main="Motif match mean size", legend=c("Flu", "NI"), las=2)
+barplot(df_no_single$Mean_Size, names.arg = df_no_single$Ind_p, col = colors, main="Genome-wide Motif match mean size", legend=c("Flu", "NI"), las=2)
 
 #ggplot(data=df, aes(Ind)) +
 #  geom_bar() +
 #  labs(title="MA0105.4.NFKB1 Average ATACseq Profile (Flu - NI)")
 ```
 
-```{r r Genome-wide NFKB1 Match Counts}
+```{r Genome-wide NFKB1 Match Counts}
 
 df <- read.table(file = './../counts_nfkb_mpbs.txt', sep = '\t',header = TRUE)
 
@@ -61,25 +61,54 @@ df_no_single <- df[order(df$Ind),]
 
 colors = rep(c("blue", "red"), dim(df_no_single)[1]/2)
 
-barplot(df_no_single$Counts, names.arg = df_no_single$Ind, col = colors, main="NFKB Motif match counts", legend=c("Flu", "NI"), las=2)
+barplot(df_no_single$Counts, names.arg = df_no_single$Ind, col = colors, main="Genome-wide NFKB Motif match counts", legend=c("Flu", "NI"), las=2)
 
-barplot(df_no_single$Mean_Size, names.arg = df_no_single$Ind_p, col = colors, main="NFKB Motif match mean size", legend=c("Flu", "NI"), las=2)
+barplot(df_no_single$Mean_Size, names.arg = df_no_single$Ind_p, col = colors, main="Genome-wide NFKB Motif match mean size", legend=c("Flu", "NI"), las=2)
 
 ```
 
 ```{r Enhancer-wide footprint counts}
-df <- read.table(file = './../counts.txt', sep = '\t',header = TRUE)
+df <- read.table(file = './../counts_enh.txt', sep = '\t',header = TRUE)
 
 df_no_single <- df[order(df$Ind),]
 
 
 colors = rep(c("blue", "red"), dim(df_no_single)[1]/2)
 
-barplot(df_no_single$Counts, names.arg = df_no_single$Ind_p, col = colors, main="Genome-wide ATACseq footprint counts", legend=c("Flu", "NI"), las=2)
+barplot(df_no_single$Counts, names.arg = df_no_single$Ind_p, col = colors, main="Enhancer-wide ATACseq footprint counts", legend=c("Flu", "NI"), las=2)
 
-barplot(df_no_single$Mean_Size, names.arg = df_no_single$Ind_p, col = colors, main="Genome-wide ATACseq footprint mean size", legend=c("Flu", "NI"), las=2)
+barplot(df_no_single$Mean_Size, names.arg = df_no_single$Ind_p, col = colors, main="Enhancer-wide ATACseq footprint mean size", legend=c("Flu", "NI"), las=2)
 
 #ggplot(data=df, aes(Ind)) +
 #  geom_bar() +
 #  labs(title="MA0105.4.NFKB1 Average ATACseq Profile (Flu - NI)")
+```
+
+```{r Enhancer-wide motif match counts}
+df <- read.table(file = './../counts_mpbs_enh.txt', sep = '\t',header = TRUE)
+
+df_no_single <- df[order(df$Ind),]
+
+
+
+colors = rep(c("blue", "red"), dim(df_no_single)[1]/2)
+
+barplot(df_no_single$Counts, names.arg = df_no_single$Ind, col = colors, main="Enhancer-wide Motif match counts", legend=c("Flu", "NI"), las=2)
+
+barplot(df_no_single$Mean_Size, names.arg = df_no_single$Ind_p, col = colors, main="Enhancer-wide Motif match mean size", legend=c("Flu", "NI"), las=2)
+```
+
+```{r Enhancer-wide NFKB1 Match Counts}
+
+df <- read.table(file = './../counts_nfkb_mpbs_enh.txt', sep = '\t',header = TRUE)
+
+df_no_single <- df[order(df$Ind),]
+
+
+colors = rep(c("blue", "red"), dim(df_no_single)[1]/2)
+
+barplot(df_no_single$Counts, names.arg = df_no_single$Ind, col = colors, main="Enhancer-wide NFKB Motif match counts", legend=c("Flu", "NI"), las=2)
+
+barplot(df_no_single$Mean_Size, names.arg = df_no_single$Ind_p, col = colors, main="Enhancer-wide NFKB Motif match mean size", legend=c("Flu", "NI"), las=2)
+
 ```
