@@ -8,4 +8,6 @@ editor_options:
   chunk_output_type: console
 ---
 
-Welcome to my research website.
+Footprinting results
+
+[Link to analysis](count_footprints.html)
